@@ -1,11 +1,13 @@
-import  Button from './Components/Button'
-import Input from './Components/Input'
-import Badge from './Components/Badge'
-import Avatar from './Components/Avatar'
-import './Components/Button.css'
-import './Components/Input.css'
-import './Components/Badge.css'
-import './Components/Avatar.css'
+import  Button from './Components/Button/Button'
+import Input from './Components/Input/Input'
+import Badge from './Components/Badge/Badge'
+import Avatar from './Components/Avatar/Avatar'
+import Card from './Components/Card/Card'
+import './Components/Button/Button.css'
+import './Components/Input/Input.css'
+import './Components/Badge/Badge.css'
+import './Components/Avatar/Avatar.css'
+import './Components/Card/Card.css'
 
 function App() {
   return (
@@ -36,6 +38,11 @@ function App() {
       <Avatar initials='KJ' size='lg' />
     </div>
 
+    <div style={{padding:'32px', display: 'flex', gap:'16px', alignItems:'center'}}>
+    <Card albumTitle="Album Title" artist="Artist Name" 
+    genre="Hip-Hop" year="2025" onLog={() => console.log('Album logged')} 
+    />
+    </div>
 
 
     </div>
