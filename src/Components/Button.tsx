@@ -4,7 +4,7 @@ interface ButtonProps {
     onClick?: () => void
 }
 
-export function Button( { label, variant = 'primary', onClick } : ButtonProps ) {
+export default function Button( { label, variant = 'primary', onClick } : ButtonProps ) {
        return (
         <>
         <button className={`btn btn--${variant}`} 

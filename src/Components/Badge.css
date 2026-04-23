@@ -1,0 +1,27 @@
+.badge {
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  font-weight: 600;
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+}
+
+.badge--default {
+  background-color: var(--color-accent-primary);
+  color: var(--color-text-button);
+}
+
+
+.badge--outline {
+  background-color: transparent;
+  border: 0.5px solid var(--color-accent-primary);
+  color: var(--color-accent-primary);
+}
+
+.badge--muted {
+  background-color: var(--color-surface-raised);
+  color: var(--color-text-disabled);
+}
+

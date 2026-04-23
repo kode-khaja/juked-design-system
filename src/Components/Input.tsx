@@ -1,7 +1,7 @@
 interface InputProps {
     label: string,
     placeholder?: string,
-    state?: 'default' | 'focused' | 'error' | 'disabled',
+    state: 'default' | 'focused' | 'error' | 'disabled',
     errorMessage?: string
 }
 
