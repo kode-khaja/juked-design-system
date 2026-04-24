@@ -3,13 +3,21 @@ import Input from './Components/Input/Input'
 import Badge from './Components/Badge/Badge'
 import Avatar from './Components/Avatar/Avatar'
 import Card from './Components/Card/Card'
+import TabBar from './Components/TabBar/TabBar'
+import TopNav from './Components/TopNav/TopNav'
 import './Components/Button/Button.css'
 import './Components/Input/Input.css'
 import './Components/Badge/Badge.css'
 import './Components/Avatar/Avatar.css'
 import './Components/Card/Card.css'
+import './Components/TabBar/TabBar.css'
+import './Components/TopNav/TopNav.css'
+import { useState } from 'react'
 
 function App() {
+ 
+  const [activeTab, setActiveTab] = useState('home')
+
   return (
     <div style={{ padding: '32px', display: 'flex', flexDirection: 'column', gap: '32px' }}>
 
@@ -43,8 +51,9 @@ function App() {
     genre="Hip-Hop" year="2025" onLog={() => console.log('Album logged')} 
     />
     </div>
-
-
+   <TopNav title='Page Title' />
+   <TabBar active={activeTab} onChange={(id) => setActiveTab(id)} />
+    
     </div>
       
   )
