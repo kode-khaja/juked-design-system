@@ -12,17 +12,17 @@
 .avatar--sm {
   width: 28px;
   height: 28px;
-  font-size: 11px;
+  font-size: var(--font-size-label);
 }
 
 .avatar--md {
   width: 40px;
   height: 40px;
-  font-size: 14px;
+  font-size: var(--font-size-small);
 }
 
 .avatar--lg {
   width: 56px;
   height: 56px;
-  font-size: 18px;
+  font-size: var(--font-size-h3);
 }
