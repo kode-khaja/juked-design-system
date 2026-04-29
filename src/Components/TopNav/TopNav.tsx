@@ -1,7 +1,10 @@
 interface TopNavProps {
-    title: string,
-    onBack?: () => void,
-    onAction?: () => void
+  /** The title displayed in the center of the nav */
+  title: string
+  /** Callback fired when the back button is clicked */
+  onBack?: () => void
+  /** Callback fired when the action button is clicked */
+  onAction?: () => void
 }
 
 export default function TopNav({title, onBack, onAction}: TopNavProps) {

@@ -4,11 +4,16 @@ import '../Button/Button.css'
 import '../Badge/Badge.css'
 
 interface CardProps {
-    albumTitle: string,
-    artist: string,
-    genre: string,
-    year: string,
-    onLog: () => void
+  /** The album title */
+  albumTitle: string
+  /** The artist name */
+  artist: string
+  /** The genre tag displayed on the card */
+  genre: string
+  /** The release year displayed on the card */
+  year: string
+  /** Callback fired when Log Album is clicked */
+  onLog?: () => void
 }
 
 export default function Card({ albumTitle, artist, genre, year, onLog }: CardProps) {

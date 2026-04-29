@@ -1,10 +1,13 @@
 interface InputProps {
-    label: string,
-    placeholder?: string,
-    state: 'default' | 'focused' | 'error' | 'disabled',
-    errorMessage?: string
+  /** The label displayed above the input */
+  label: string
+  /** Controls the visual state of the input */
+  state?: 'default' | 'focused' | 'error' | 'disabled'
+  /** Placeholder text shown when input is empty */
+  placeholder?: string
+  /** Error message shown below input when state is error */
+  errorMessage?: string
 }
-
 export default function Input({ label, placeholder = 'Placeholder Text', 
     state = 'default', errorMessage = 'This field is required'}: InputProps) {
         return (

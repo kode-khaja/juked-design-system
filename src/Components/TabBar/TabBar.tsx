@@ -1,12 +1,15 @@
 interface TabBarProps {
-    active?: string,
-    onChange?: (id: string) => void
+  /** The id of the currently active tab */
+  active?: string
+  /** Callback fired when a tab is clicked, returns the tab id */
+  onChange?: (id: string) => void
 }
 
 interface TabItems {
     label: string,
     id: string
 }
+
 
 const tabs: TabItems[]= [
     { label: 'Home', id: 'home' },
