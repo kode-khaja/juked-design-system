@@ -1,0 +1,9 @@
+import{n as e}from"./chunk-DnJy8xQt.js";import{t}from"./jsx-runtime-DxP0NviS.js";function n({title:e,onBack:t,onAction:n}){return(0,r.jsxs)(`header`,{className:`top-nav`,children:[(0,r.jsx)(`button`,{className:`top-nav-btn`,onClick:t,children:(0,r.jsx)(`div`,{className:`top-nav-icon`})}),(0,r.jsx)(`span`,{className:`top-nav-title`,children:e}),(0,r.jsx)(`button`,{className:`top-nav-btn`,onClick:n,children:(0,r.jsx)(`div`,{className:`top-nav-icon`})})]})}var r,i=e((()=>{r=t(),n.__docgenInfo={description:``,methods:[],displayName:`TopNav`,props:{title:{required:!0,tsType:{name:`string`},description:`The title displayed in the center of the nav`},onBack:{required:!1,tsType:{name:`signature`,type:`function`,raw:`() => void`,signature:{arguments:[],return:{name:`void`}}},description:`Callback fired when the back button is clicked`},onAction:{required:!1,tsType:{name:`signature`,type:`function`,raw:`() => void`,signature:{arguments:[],return:{name:`void`}}},description:`Callback fired when the action button is clicked`}}}})),a=e((()=>{})),o,s,c,l;e((()=>{i(),a(),o={title:`Juked/TopNav`,component:n,tags:[`autodocs`]},s={args:{title:`Page Title`}},c={args:{title:`To Pimp a Butterfly`}},s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+  args: {
+    title: 'Page Title'
+  }
+}`,...s.parameters?.docs?.source}}},c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:`{
+  args: {
+    title: 'To Pimp a Butterfly'
+  }
+}`,...c.parameters?.docs?.source}}},l=[`Default`,`AlbumPage`]}))();export{c as AlbumPage,s as Default,l as __namedExportsOrder,o as default};
